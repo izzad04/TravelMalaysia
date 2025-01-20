@@ -1,0 +1,214 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="logo/logojejakmalaysia.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JEJAK MALAYSIA</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/slider.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/indexgallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="javascript/slider.js" defer></script>
+    <script src="javascript/timeanddate.js" defer></script>
+</head>
+<body>
+
+    <section id="Home">
+        <nav>
+            <div class="logo">
+                <img src="logo/logojejakmalaysia.png" alt="Website Logo">
+            </div>
+            
+        <!-- Add this where you want to display the date and time -->
+            <div id="date-time" style="font-size: 20px; font-weight: bold;"></div>
+            
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li class="dropdown">
+                    <a href="#Location">Location</a>
+                    <ul class="dropdown-content">
+                        <li><a href="penang.html">Penang</a></li>
+                        <li><a href="terengganu.html">Terengganu</a></li>
+                        <li><a href="sabah.html">Sabah</a></li>
+                        <li><a href="perak.html">Perak</a></li>
+                    </ul>
+                </li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="top3.html">Top 3</a></li>
+            </ul>
+
+            <div class="icon">
+                <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                <i class="fa-solid fa-heart" aria-hidden="true"></i>
+                <a href="https://wa.link/bhltmk" target="_blank" title="Shopping Cart">
+                    <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                </a>
+            </div>
+        </nav>
+
+        <br><br>
+
+        <div class="main">
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="image/poster1.png" style="width:100%" alt="Slide 1">
+                    <div class="text"></div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="image/poster2.png" style="width:100%" alt="Slide 2">
+                    <div class="text"></div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="image/poster3.png" style="width:100%" alt="Slide 3">
+                    <div class="text"></div>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+
+        <br><br><br>
+        
+        <!--About-->
+
+        <div class="about" id="About">
+            <div class="about_main">
+    
+                <div class="image">
+                    <img src="image/computer1.png" alt="Computer Image">
+                </div>
+    
+                <div class="about_text">
+                    <h1><span></span></h1>
+                    <h3>Why Choose us?</h3>
+                    <p>
+                        Choosing the travel website Jejak Malaysia is a great idea because it offers reliable reviews from real travelers. This helps you make informed decisions about where to visit and what to experience. Jejak Malaysia covers a wide selection of destinations and attractions, ensuring you can find something to suit your interests and preferences. The website is user-friendly, making it simple to explore reviews and recommendations quickly. Additionally, Jejak Malaysia has an active community of travel enthusiasts who share their experiences and tips. Lastly, the site features high-quality photos and videos of destinations, giving you a visual glimpse of your adventure before you go.
+                    </p>
+                </div>
+    
+            </div>
+    
+            <a href="aboutus.html" class="about_btn">More</a>
+    
+         <!--padam ni (</div>) kalau tknak spacing bnyak kalau nak adjust spacing just letak br sini-->
+
+        <!--Gallary-->
+        <div class="gallary" id="Gallary">
+            <h1>Our<span>Gallery</span></h1>
+    
+            <div class="gallary_image_box">
+                <div class="gallary_image">
+                    <img src="image/penang.jpg">
+    
+                    <h3>Penang</h3>
+                    <p>
+                        "In Penang, travel is a celebration of culture and flavor, with iconic spots like George Town and Penang Hill capturing the essence of the island’s vibrant heritage and charm." 
+                    </p>
+                    <a href="penang.html" class="gallary_btn">Explore Now</a>
+                </div>
+    
+                <div class="gallary_image">
+                    <img src="image/terengganu.jpg">
+                    <h3>Terengganu</h3>
+                    <p>
+                        "In Terengganu, travel is a journey into natural beauty, with destinations like the Perhentian Islands and Tengku Tengah Zaharah Mosque reflecting the state’s serene and captivating landscapes." 
+                    </p>
+                    <a href="terengganu.html" class="gallary_btn">Explore Now</a>
+                </div>
+    
+                <div class="gallary_image">
+                    <img src="image/sabah.jpg">
+    
+                    <h3>Sabah</h3>
+                    <p>
+                        "In Sabah, the beauty of its landscapes is matched only by its vibrant culture, with landmarks like Mount Kinabalu and islands like Sipadan showcasing the state’s breathtaking natural heritage."
+                    </p>
+                    <a href="sabah.html" class="gallary_btn">Explore Now</a>
+                </div>
+    
+                <div class="gallary_image">
+                    <img src="image/perak.jpg">
+    
+                    <h3>Perak</h3>
+                    <p>
+                        "In Perak, travel is a journey of discovery, with its charming towns, breathtaking landscapes, and iconic landmarks capturing the heart of Malaysia’s cultural and natural heritage." 
+                    </p>
+                    <a href="perak.html" class="gallary_btn">Explore Now</a>
+                </div>
+    
+            </div>
+    
+        
+        </div>
+        <!--Footer-->
+
+        <footer>
+            <div class="footer_main">
+    
+                <div class="footer_tag">
+                    <h2>Location</h2>
+                    <p>Penang</p>
+                    <p>Terengganu</p>
+                    <p>Sabah</p>
+                    <p>Perak</p>
+                </div>
+    
+                <div class="footer_tag">
+                    <h2>Quick Link</h2>
+                    <p>Home</p>
+                    <p>About Us</p>
+                    <p>Cities</p>
+                    <p>Categories</p>
+                    <p>Article</p>
+                    <p>Feedback</p>
+                    <p>Contact Us</p>
+                </div>
+    
+                <div class="footer_tag">
+                    <h2>Contact</h2>
+                    <p>+60 376 7690</p>
+                    <p>jejakmalaysia.com</p>
+                </div>
+    
+                <div class="footer_tag">
+                    <h2>Our Service</h2>
+                    <p>Easy Navigation</p>
+                    <p>Personalized Recommendations</p>
+                    <p>Extensive Restaurant Listings</p>
+                    <p>Feedback and Support</p>
+                    <p>Mobile-Friendly Experience</p>
+                    <p>Cuisine-Specific Guides</p>
+                </div>
+    
+                <div class="footer_tag">
+                    <h2>Follows</h2>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+    
+            </div>
+    
+            <p class="end">Design by<span><i class="fa-solid fa-face-grin"> </i> Mr. Kim</span></p>
+    
+        </footer>
+
+    </section>
+
+</body>
+</html>
