@@ -1,0 +1,69 @@
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: transparent;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    border:2px solid rgba(255, 255, 255, 0.642);
+    backdrop-filter: blur(20px);
+}
+
+h1, h3 {
+    color: #012c18;
+    font-size: 2em;
+    font-family: mv boli;
+}
+
+p, a, form {
+    color: #012c18;
+    line-height: 1.6;
+    
+}
+
+a {
+    color: #012c18;
+    text-decoration: none;
+}
+
+#map {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #0e420e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #012c18;
+}

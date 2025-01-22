@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="logo/logojejakmalaysia.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JEJAK MALAYSIA</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/video.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <section id="Home">
+        <nav>
+            <div class="logo">
+                <img src="logo/logojejakmalaysia.png" alt="Website Logo">
+            </div>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li class="dropdown">
+                    <a href="#Location">Location</a>
+                    <ul class="dropdown-content">
+                        <li><a href="penang.html">Penang</a></li>
+                        <li><a href="terengganu.html">Terengganu</a></li>
+                        <li><a href="sabah.html">Sabah</a></li>
+                        <li><a href="perak.html">Perak</a></li>
+                    </ul>
+                </li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="video.html">Video</a></li>
+            </ul>
+
+            <div class="icon">
+                <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                <i class="fa-solid fa-heart" aria-hidden="true"></i>
+                <a href="https://wa.link/bhltmk" target="_blank" title="Shopping Cart">
+                    <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                </a>
+            </div>
+        </nav>
+
+        <br><br><br>
+
+        <div class="main">
+            <div class="container">
+                <!-- Main Video Area -->
+                <div class="main-video-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/nim9m-Gt330?si=g5a7ybEfDIE4JXmG" 
+                        class="main-video" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                    <h3 class="main-vid-title">Terengganu Pulau Redang</h3>
+                </div>
+            
+                <!-- Video List Area -->
+                <div class="video-list-container" id="videosList">
+                    <!-- Video List Will Be Populated Here via JavaScript -->
+                </div>
+            </div>            
+            <script src="javascript/video.js"></script>
+        </div>
+
+        <br><br><br><br><br><br><br><br><br>
+        
+        <!--Footer-->
+
+        <footer>
+            <div class="footer_main">
+    
+                <div class="footer_tag">
+                    <h2>Location</h2>
+                    <p><a href="penang.html">Penang</a></p>
+                    <p><a href="terengganu.html">Terengganu</a></p>
+                    <p><a href="sabah.html">Sabah</a></p>
+                    <p><a href="perak.html">Perak</a></p>
+                </div>
+    
+                <div class="footer_tag">
+                    <h2>Quick Link</h2>
+                    <p><a href="index.html"> Home</a></p>
+                    <p><a href="aboutus.html"> About Us </a></p>
+                    <p><a href="articles.html">Articles</a></p>
+                    <p><a href="feedback.html">Feedback</a></p>
+                    <p><a href="contactus.html">Contact Us</a></p>
+                </div>
+    
+                <div class="footer_tag">
+                    <h2>Contact</h2>
+                    <p><a href="tel:+603767690">+60 376 7690</a> </p>
+                    <p><a href="mailto:izzad2107@gmail.com">jejakmalaysia.com</a></p>
+                </div>
+    
+                <div class="footer_tag">
+                    <h2>Our Service</h2>
+                    <p>Easy Navigation</p>
+                    <p>Personalized Recommendations</p>
+                    <p>Extensive Restaurant Listings</p>
+                    <p>Feedback and Support</p>
+                    <p>Mobile-Friendly Experience</p>
+                    <p>Cuisine-Specific Guides</p>
+                </div>
+    
+                <div class="footer_tag">
+                    <h2>Follows</h2>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+    
+            <p class="end">Design by<span><i class="fa-solid fa-face-grin"></i>Mr. Froggy</span></p>
+        </footer>
+
+    </section>
+
+</body>
+</html>

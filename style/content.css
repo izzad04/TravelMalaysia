@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 10000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.review-item {
+    display: flex;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.review-item img {
+    width: 400px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 20px;
+}
+
+.info {
+    flex: 1;
+}
+
+.title {
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+.description {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.location {
+    font-style: italic;
+    color: #666;
+}
+
+.operation {
+    color: #012c18;
+}
+
+.description-list {
+    list-style-type: disc; /* Adds a bullet point to each item */
+    margin-left: 20px; /* Indentation for the list */
+    font-size: 16px; /* Adjust the font size as needed */
+    color: #333; /* Set a text color */
+    line-height: 1.6; /* Adjust line spacing for readability */
+}
+
+.description-list li {
+    margin-bottom: 10px; /* Adds spacing between list items */
+}

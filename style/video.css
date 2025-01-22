@@ -1,0 +1,144 @@
+/* Ensure the container is a flex container */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* Main Video Styling */
+.main-video-container {
+    flex: 1 1 70%;  /* Main video takes up more space */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for a floating effect */
+}
+
+.main-video {
+    width: 100%;
+    height: 500px;  /* Increase height to make the video bigger */
+    border-radius: 8px;  /* Rounded corners for the video */
+}
+
+.main-vid-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #333;
+    text-align: center;  /* Center the title */
+}
+
+/* Video List Styling */
+.video-list-container {
+    flex: 1 1 25%;  /* Video list takes up less space */
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    margin-bottom: 15px;
+}
+
+.list:hover {
+    background-color: #f0f0f0;  /* Light hover effect */
+    transform: translateX(5px);  /* Slight movement for interactivity */
+}
+
+.list.active {
+    background-color: #0c360c;
+}
+
+.container .video-list-container .list.active .list-title {
+    color: #fff;
+}
+
+.list-video {
+    width: 120px;  /* Larger thumbnail size */
+    height: 80px;  /* Maintain aspect ratio */
+    border-radius: 8px;
+    object-fit: cover;  /* Ensure the thumbnail covers the area nicely */
+}
+
+.list-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #444;
+    margin-left: 15px;
+    text-align: left;  /* Align text left */
+}
+
+/* Responsive Layout for Small Screens */
+@media (max-width: 1200px) {
+    .container {
+        margin: 0;
+        flex-direction: column;  /* Stack the sections on small screens */
+    }
+    .main-video-container {
+        margin-bottom: 20px;  /* Add margin between sections */
+    }
+    .video-list-container {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 450px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .main-video-container {
+        margin-bottom: 20px;
+    }
+
+    .list-video {
+        width: 100%;  /* Make thumbnails take full width on small screens */
+        height: auto;  /* Let height adjust automatically */
+    }
+
+    .main-vid-title {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .list-title {
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+/* Add Full Width and Height Control */
+.list-video,
+.main-video {
+    width: 100%;
+    height: auto;  /* Ensure it adjusts for different screen sizes */
+}
+
+.main-video-container iframe {
+    width: 100%;
+    height: 500px;
+    border-radius: 8px;  /* Rounded corners for the video */
+}
+
+/* Ensure the list items are responsive */
+.video-list-container .list {
+    flex-direction: row;  /* Align the list horizontally */
+    align-items: center;
+    gap: 20px;
+}
+
+.video-list-container .list:last-child {
+    margin-bottom: 0;
+}

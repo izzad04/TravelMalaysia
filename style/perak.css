@@ -1,0 +1,141 @@
+/*Gallary*/
+
+/* Gallery Styling */
+.gallary {
+    width: 100%;
+    padding: 10px 0; /* Reduce top and bottom padding */
+    margin-top: 0; /* Ensure no extra spacing above the gallery */
+}
+
+.gallary h1 {
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallary h1 span{
+    margin-left: 15px;
+    color: #012c18;
+    font-family: mv boli;
+}
+
+.gallary h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #012c18;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+
+.gallary .gallary_image_box{
+    width: 95%;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-gap: 10px;
+}
+
+.gallary .gallary_image_box .gallary_image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+}
+
+.gallary .gallary_image_box .gallary_image img{
+    width: 100%;
+    transition: .3s;
+}
+
+.gallary .gallary_image_box .gallary_image:hover img{
+    opacity: 0.4;
+}
+
+.gallary .gallary_image_box .gallary_image h3{
+    position: absolute;
+    font-size: 35px;
+    margin-bottom: 130px;
+    color: #ffffff;
+    font-family: polo;
+    z-index: 5;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.gallary .gallary_image_box .gallary_image:hover h3{
+    opacity: 1;
+}
+
+.gallary .gallary_image_box .gallary_image p{
+    position: absolute;
+    width: 400px;
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+    line-height: 22px;
+    opacity: 0;
+    z-index: 5;
+    transition: 0.3s;
+}
+
+.gallary .gallary_image_box .gallary_image:hover p{
+    opacity: 1;
+}
+
+.gallary .gallary_image_box .gallary_image .gallary_btn{
+    position: absolute;
+    margin-top: 180px;
+    color: #ffffff;
+    background: #012c18;
+    padding: 7px 25px;
+    text-decoration: none;
+    opacity: 0;
+    transform: translateY(45px);
+    z-index: 5;
+    transition: 0.3s;
+}
+
+.gallary .gallary_image_box .gallary_image:hover .gallary_btn{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Video Section Styling */
+.video-section {
+    text-align: center;
+    padding: 30px 20px; /* Reduce padding to bring sections closer */
+    background-color: #f9f9f9;
+    border-top: 5px solid #ff5722;
+    margin-bottom: 10px; /* Minimize spacing below the video section */
+}
+
+.video-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px; /* Reduce space below the title */
+    color: #333;
+}
+
+.video-container {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    border: none;
+}
+
+.video-container video:focus {
+    outline: none;
+}
+
+
+
